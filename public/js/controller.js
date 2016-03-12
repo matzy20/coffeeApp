@@ -6,9 +6,22 @@ myApp.controller('StoreController', [
   function ($scope, $firebaseObject){
     var myDataRef = new Firebase('https://fiery-heat-4915.firebaseio.com/');
 
-      $scope.data = $firebaseObject(myDataRef);
-    var syncObject = $firebaseObject(myDataRef);
+    var obj = $firebaseObject(myDataRef);
 
-    syncObject.$bindTo($scope, "data");
+    obj.$bindTo($scope, "data").then(function (){
+      console.log($scope.data);
+      $scope.data.who = "User";
+      $scope.data.points = 0;
+    });
+
+
+    // $scope.addPoints = function (data) {
+    //   console.log($scope.data.value);
+    //   if (!$scope.data.value){
+    //     myDataRef.set(0);
+    //   }
+    //   myDataRef.set($scope.data.value + 1);
+    //   console.log($scope.data.value);
+    // };
   }
 ]);

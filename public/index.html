@@ -14,7 +14,12 @@
   <body ng-app="myApp">
     <h1>THE Owner</h1>
     <div ng-controller="StoreController">
-      <button type="submit" ng-click="Hi">Approved</button>
+      <button type="submit" ng-click="addOnePoint()">Thank You!</button>
+      <button type="submit" ng-click="addTwoPoints()">Thank You 2X!</button>
+      <button type="submit" ng-click="addThreePoints()">Max Points Fo U!</button>
+      <button type="submit" ng-click="clearPoints()">Clear</button>
+      <p>{{ data.points }}</p>
+
     </div>
 
     <script src="/js/myApp.js"></script>

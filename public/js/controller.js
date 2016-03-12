@@ -14,14 +14,37 @@ myApp.controller('StoreController', [
       $scope.data.points = 0;
     });
 
+    $scope.addOnePoint = function (){
+      var data = $scope.data;
 
-    // $scope.addPoints = function (data) {
-    //   console.log($scope.data.value);
-    //   if (!$scope.data.value){
-    //     myDataRef.set(0);
-    //   }
-    //   myDataRef.set($scope.data.value + 1);
-    //   console.log($scope.data.value);
-    // };
+      if (!data.points){
+        data.points = 0;
+      }
+      data.points+=1;
+    };
+
+    $scope.addTwoPoints = function (){
+      var data = $scope.data;
+
+      if (!data.points){
+        data.points = 0;
+      }
+      data.points+=2;
+    };
+
+    $scope.addThreePoints = function (){
+      var data = $scope.data;
+
+      if (!data.points){
+        data.points = 0;
+      }
+      data.points+=3;
+    };
+
+    $scope.clearPoints = function (){
+      var data = $scope.data;
+
+      data.points = 0;
+    };
   }
 ]);

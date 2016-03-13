@@ -70,18 +70,27 @@ button {
   bottom: 0;
   width: 100%;
 }
+
+.zero{
+  height: 0%;
+}
+
 .one{
   height: 20%;
 }
+
 .two {
   height: 40%;
 }
+
 .three {
   height: 60%;
 }
+
 .four {
   height: 80%;
 }
+
 .five {
   height: 100%;
 }

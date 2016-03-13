@@ -1,3 +1,5 @@
+/*http://codepen.io/rupok/pen/aDkCs*/
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +19,13 @@ button {
   color: white;
   font-weight: bold;
   border-radius: 15%;
+}
+
+p {
+  color: #ffc34d;
+  font-weight: bold;
+  font-size: 200%;
+  text-shadow: 2px 2px 4px black;
 }
 
 .cup {

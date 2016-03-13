@@ -10,16 +10,22 @@
     <script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
     <meta charset="UTF-8">
     <title>Coffeine Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body ng-app="myApp">
     <h1>THE Owner</h1>
     <div ng-controller="StoreController">
-      <button type="submit" ng-click="addOnePoint()">Thank You!</button>
-      <button type="submit" ng-click="addTwoPoints()">Thank You 2X!</button>
-      <button type="submit" ng-click="addThreePoints()">Max Points Fo U!</button>
-      <button type="submit" ng-click="clearPoints()">Clear</button>
+      <button type="submit" ng-click="addOnePoint()">Point +1</button>
+      <button type="submit" ng-click="addTwoPoints()">Points +2</button>
+      <button type="submit" ng-click="addThreePoints()">Points +3</button>
+      <button type="submit" ng-click="clearPoints()">Clear/Reset</button>
       <p>{{ data.points }}</p>
+    </div>
+    <div class="cup">
+      <div class="filled">
+        <div class="ng-class: one coffee"></div>
 
+      </div>
     </div>
 
     <script src="/js/myApp.js"></script>
